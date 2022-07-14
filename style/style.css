@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+#root > img:nth-child(1) {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid black;
+  z-index: 1;
+}
+#root > img:nth-child(2) {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+}
+#root > div:nth-child(3) {
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  left: 400px;
+  top: 80px;
+  font-size: 300px;
+  font-weight: bold;
+  z-index: 2;
+}/*# sourceMappingURL=style.css.map */

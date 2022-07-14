@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div id="root">
+    <img src="./img/img-2.png" alt="">
+    <img src="./img/img-1.png" alt="">
+    <div>WHIPLASH</div>
+  </div>
+  <script>
+    const div = document.querySelectorAll("#root>img")
+
+    div[0].addEventListener("click",(event)=>{
+      console.log(event.target.style.zIndex)
+      event.target.style.zIndex = 3;
+    })
+  </script>
+</body>
+</html>
